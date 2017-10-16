@@ -46,7 +46,6 @@ resource "aws_iam_user_policy_attachment" "bucket-policy-attach" {
 resource "aws_s3_bucket" "bucket" {
   bucket        = "${var.site_domain}"
   acl           = "public-read"
-  region        = "${var.aws_region}"
   force_destroy = true
 
   website {

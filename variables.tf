@@ -1,4 +1,3 @@
-variable "aws_region" {}
 variable "site_domain" {}
 
 variable "ci_user" {
